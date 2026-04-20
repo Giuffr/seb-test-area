@@ -2,24 +2,67 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="robots" content="noindex, nofollow"> <!-- Impedisce a Google di trovarla -->
-    <title>Avvio Esame B2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow"> <!-- Protezione dai motori di ricerca -->
+    <title>CLA Unime - Avvio Esame</title>
     <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background-color: #f8f9fa; }
-        .btn-container { display: flex; flex-direction: column; gap: 15px; align-items: center; }
-        .btn-seb { 
-            background-color: #0078d4; color: white; padding: 15px 30px; 
-            text-decoration: none; border-radius: 5px; width: 300px; font-weight: bold;
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f2f5;
+        }
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+        }
+        h1 { color: #1a365d; font-size: 1.5rem; margin-bottom: 1rem; }
+        p { color: #4a5568; margin-bottom: 2rem; line-height: 1.5; }
+        .btn-launch {
+            display: inline-block;
+            background-color: #0078d4;
+            color: white;
+            padding: 18px 32px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+        .btn-launch:hover {
+            background-color: #005a9e;
+            transform: translateY(-2px);
+        }
+        .footer-note {
+            margin-top: 1.5rem;
+            font-size: 0.8rem;
+            color: #a0aec0;
         }
     </style>
 </head>
 <body>
-    <h1>Benvenuto all'Esame di Inglese B2</h1>
-    <p>Seleziona il modulo da avviare:</p>
+
+<div class="card">
+    <h1>Esame Inglese B2</h1>
+    <p>Assicurati che Safe Exam Browser sia installato. Clicca il pulsante sotto per avviare il modulo di <b>Grammar</b>.</p>
     
-    <div class="btn-container">
-        <!-- Link con protocollo SEB e download=1 per i file su GitHub -->
-        <a href="UNIME-EngMedB2-grammar.seb" class="btn-seb">Avvia Parte 1 (Grammar)</a>
+    <!-- Link configurato con protocollo SEB per l'avvio remoto diretto da GitHub -->
+    <a href="seb://giuffr.github.io/seb-test-area/UNIME-EngMedB2-grammar.seb" class="btn-launch">
+        AVVIA GRAMMAR B2
+    </a>
+
+    <div class="footer-note">
+        Università degli Studi di Messina<br>
+        Centro Linguistico d'Ateneo
     </div>
+</div>
+
 </body>
 </html>
